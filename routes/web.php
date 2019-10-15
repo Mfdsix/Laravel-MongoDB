@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(["middleware"=>"auth"], function(){
+	Route::resource('project', 'ProjectController');
+	Route::get('project/{id}/delete', 'ProjectController@delete')->name('project.delete');
+	Route::get('project/{id}/take', 'ProjectController@take')->name('project.take');
+	Route::get('project/{id}/finish', 'ProjectController@finish')->name('project.finish');
+});
