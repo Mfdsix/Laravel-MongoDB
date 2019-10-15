@@ -37,6 +37,6 @@ This is recommended tool to use MongoDB in GUI mode (https://www.mongodb.com/pro
 This is the main tool to make your Laravel project can implements the MongoDB functions (https://github.com/jenssegers/laravel-mongodb)
 ```
 
-## ===================================================================================================
+## =========================================================================================
 ## Cheers from MFDSIX
-## ===================================================================================================
+## =========================================================================================
